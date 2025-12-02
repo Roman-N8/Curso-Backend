@@ -24,8 +24,8 @@ class CustomUser(AbstractUser):
 ## Ejemplos de uso
 Ejemplos de como hacer peticiones a todas las APIs del proyecto
 ### 1. Registro de usuario (rol USER por defecto)
-- Endpoint: /api/users/register/.
-- Metodo: POST.
+- Endpoint: /api/users/register/
+- Metodo: POST
 - body:
 ```JSON
 {
@@ -36,6 +36,16 @@ Ejemplos de como hacer peticiones a todas las APIs del proyecto
   "country": "MX",
   "city": "Morelia",
   "phoneNumber": "+52 9854375648"
+}
+```
+- Respuesta (200/201): 
+```JSON
+{
+  "id": 1,
+  "username": "roman",
+  "email": "roman@example.com",
+  "first_name": "Roman",
+  "last_name": "Chavez"
 }
 ```
 
